@@ -7,3 +7,6 @@ __pycache__/
 # 忽略所有.egg-info/.egg.info构建目录
 *.egg-info/
 *.egg.info/
+
+dist/scientist_globe-0.1.0-py3-none-any.whl
+dist/scientist_globe-0.1.0.tar.gz
