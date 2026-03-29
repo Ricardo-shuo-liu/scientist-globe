@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 宇宙 - 全球计算机科学家 3D 互动图谱</title>
+    <!-- 引入 Font Awesome 6.x CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 加载屏幕 -->
+    <div id="loading-screen">
+        <div class="neon-loader"></div>
+        <p>Neural Network Initializing...</p>
+    </div>
+
+    <!-- 画布容器 -->
+    <div id="canvas-container"></div>
+
+    <!-- 顶部标题 -->
+    <header class="app-header">
+        <h1 data-i18n="title">Global Computer Scientists</h1>
+        <p data-i18n="subtitle">AI Neural Network Visualization</p>
+    </header>
+
+    <!-- 语言切换与查看全部 -->
+    <div class="top-actions">
+        <button id="lang-toggle" class="action-btn lang-btn">
+            <i class="fas fa-language"></i> <span id="lang-text">English</span>
+        </button>
+        <button id="reset-view" class="action-btn reset-btn">
+            <i class="fas fa-globe"></i> <span data-i18n="reset">查看全部</span>
+        </button>
+    </div>
+
+    <!-- 侧边筛选面板 -->
+    <nav id="filter-panel">
+        <div class="filter-group">
+            <div class="layer-toggle">
+                <span><i class="fas fa-brain"></i> <span data-i18n="field_ai">AI / 深度学习</span></span>
+                <div class="toggle-switch active" data-field="AI"></div>
+            </div>
+            <div class="layer-toggle">
+                <span><i class="fas fa-microchip"></i> <span data-i18n="field_os">系统 / 架构</span></span>
+                <div class="toggle-switch" data-field="OS"></div>
+            </div>
+            <div class="layer-toggle">
+                <span><i class="fas fa-square-root-variable"></i> <span data-i18n="field_theory">计算机理论</span></span>
+                <div class="toggle-switch" data-field="Theory"></div>
+            </div>
+            <div class="layer-toggle">
+                <span><i class="fas fa-server"></i> <span data-i18n="field_hardware">硬件 / 底层</span></span>
+                <div class="toggle-switch" data-field="Hardware"></div>
+            </div>
+            <div class="layer-toggle">
+                <span><i class="fas fa-code"></i> <span data-i18n="field_dev">开发者 / Dev</span></span>
+                <div class="toggle-switch active" data-field="Developer"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 国家列表侧边栏 -->
+    <aside id="country-sidebar">
+        <div class="sidebar-title">
+            <i class="fas fa-map-marker-alt"></i>
+            <span id="selected-country-name">国家科学家列表</span>
+        </div>
+        <div id="country-scientist-list" class="scientist-list">
+            <!-- 动态插入 -->
+        </div>
+    </aside>
+
+    <!-- 详情面板 -->
+    <aside id="detail-panel">
+        <button class="close-btn" title="关闭面板">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="panel-body">
+            <!-- 内容由 main.js 动态渲染 -->
+        </div>
+    </aside>
+
+    <!-- 悬浮提示框 -->
+    <div id="tooltip" class="tooltip"></div>
+
+    <!-- 脚本引入：使用 ESM 模块 -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
