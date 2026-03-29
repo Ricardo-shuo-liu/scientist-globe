@@ -1,4 +1,4 @@
-# Global Computer Scientist 3D Interactive Globe (Package Edition)
+# Global Computer Scientist 3D Interactive Globe
 
 ---
 
@@ -13,10 +13,15 @@ This is a packaged 3D interactive frontend project as a standard Python library.
 
 ### 🚀 Installation Guide
 
-You can install this library directly via `pip` in the project root directory:
-
+#### 1. Install from PyPI (Recommended)
+You can install the library directly from PyPI with **one command** (no local files required):
 ```bash
-# Local installation mode
+pip install scientist-globe
+```
+
+#### 2. Local Installation (For Development)
+Install from the project root directory:
+```bash
 pip install .
 ```
 
@@ -63,6 +68,5 @@ The project has been refactored into a standard Python package structure (`src` 
 ### 👨‍🚀 About the Developer
 - **Author**: Ricardo
 - **Location**: Zhengzhou, Henan, China
-
 
 ---

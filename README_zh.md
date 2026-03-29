@@ -1,4 +1,4 @@
-# 全球计算机科学家 3D 互动地球仪（打包版）
+# 全球计算机科学家 3D 互动地球仪
 
 ---
 [🌐 Switch to English Version](./README.md)
@@ -11,10 +11,15 @@
 
 ### 🚀 安装指南
 
-在项目根目录下直接通过 `pip` 安装本库即可：
-
+#### 1. 从 PyPI 安装（推荐）
+直接通过 pip 在线安装，无需下载源码：
 ```bash
-# 本地安装模式
+pip install scientist-globe
+```
+
+#### 2. 本地安装（开发模式）
+在项目根目录下执行：
+```bash
 pip install .
 ```
 
@@ -61,6 +66,3 @@ scientist-globe --serve --port 9000 --host 0.0.0.0
 ### 👨‍🚀 关于开发者
 - **作者**：Ricardo
 - **地区**：中国·河南·郑州
-
-
----
